@@ -13,7 +13,7 @@
         <img src='  alt='City of Sedona Logo'>
       </span>
       <ul class='site-navigation'>
-        <li><a href='info.html'>Информация</a></li>
+        <li><a href='index.html'>Информация</a></li>
         <li><a href='photo&video.html'>Фото и видео</a></li>
         <li><a href='state-map.html'>Карта штата</a></li>
         <li><a href='inner.html'>Гостиницы</a></li>
@@ -22,8 +22,35 @@
   </header>
 
   <main>
-    
+    <form class='hotels-select-form2' action='https://echo.htmlacademy.ru' method='post'>
+      <h2 class='hotels-select-form2-header'>Инфраструктура:</h2>
+      <input type='checkbox' name='pool' id='checkbox-pool'>
+          <label for='checkbox-pool'>Бассейн</label>
+      <input type='checkbox' name='parking' id='checkbox-parking'>
+          <label for='checkbox-parking'>Парковка</label>
+      <input type='checkbox' name='wifi' id='checkbox-wifi'>
+          <label for='checkbox-wifi'>Wi-Fi</label>
 
+      <h2 class='hotels-select-form2-header'>Тип жилья:</h2>
+      <input type='checkbox' name='hotel' id='checkbox-hotel'>
+          <label for='checkbox-hotel'>Гостиница</label>
+      <input type='checkbox' name='motel' id='checkbox-motel'>
+          <label for='checkbox-motel'>Мотель</label>
+      <input type='checkbox' name='apartments' id='checkbox-apartments'>
+          <label for='checkbox-apartments'>Апартаменты</label>
+
+      <h2 class='hotels-select-form2-header'>Стоимость в сутки(р):</h2>
+      <input type='range' min='0' max='5000' step='100' name='price'>
+       <button type='submit'>Показать</button>
+
+    </form>
+
+    <section class='search-summary'>
+      <span>Найдено:3 Сортировка:</span>
+      <!-- и всякие селекторы для сортировки -->
+    </section>
+
+      
   </main>
 
   <footer class='main-footer'>
