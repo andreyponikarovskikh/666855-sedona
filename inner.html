@@ -22,35 +22,74 @@
   </header>
 
   <main>
-    <form class='hotels-select-form2' action='https://echo.htmlacademy.ru' method='post'>
-      <h2 class='hotels-select-form2-header'>Инфраструктура:</h2>
-      <input type='checkbox' name='pool' id='checkbox-pool'>
-          <label for='checkbox-pool'>Бассейн</label>
-      <input type='checkbox' name='parking' id='checkbox-parking'>
-          <label for='checkbox-parking'>Парковка</label>
-      <input type='checkbox' name='wifi' id='checkbox-wifi'>
-          <label for='checkbox-wifi'>Wi-Fi</label>
+    <section class=filters>
+      <h2 class='visually-hidden'>Критерии выбора гостиницы</h2>
+      <form class='hotels-select-form2' action='https://echo.htmlacademy.ru' method='post'>
+        <h3 class='hotels-select-form2-header'>Инфраструктура:</h2>
+        <input type='checkbox' name='pool' id='checkbox-pool'>
+            <label for='checkbox-pool'>Бассейн</label>
+        <input type='checkbox' name='parking' id='checkbox-parking'>
+            <label for='checkbox-parking'>Парковка</label>
+        <input type='checkbox' name='wifi' id='checkbox-wifi'>
+            <label for='checkbox-wifi'>Wi-Fi</label>
 
-      <h2 class='hotels-select-form2-header'>Тип жилья:</h2>
-      <input type='checkbox' name='hotel' id='checkbox-hotel'>
-          <label for='checkbox-hotel'>Гостиница</label>
-      <input type='checkbox' name='motel' id='checkbox-motel'>
-          <label for='checkbox-motel'>Мотель</label>
-      <input type='checkbox' name='apartments' id='checkbox-apartments'>
-          <label for='checkbox-apartments'>Апартаменты</label>
+        <h3 class='hotels-select-form2-header'>Тип жилья:</h2>
+        <input type='checkbox' name='hotel' id='checkbox-hotel'>
+            <label for='checkbox-hotel'>Гостиница</label>
+        <input type='checkbox' name='motel' id='checkbox-motel'>
+            <label for='checkbox-motel'>Мотель</label>
+        <input type='checkbox' name='apartments' id='checkbox-apartments'>
+            <label for='checkbox-apartments'>Апартаменты</label>
 
-      <h2 class='hotels-select-form2-header'>Стоимость в сутки(р):</h2>
-      <input type='range' min='0' max='5000' step='100' name='price'>
-       <button type='submit'>Показать</button>
+        <h3 class='hotels-select-form2-header'>Стоимость в сутки(р):</h2>
+        0<input type='range' min='0' max='5000' step='100' name='price'>5000
+        <button type='submit'>Показать</button>
+      </form>
+    </section>
 
-    </form>
-
-    <section class='search-summary'>
+    <section class='select-summary'>
       <span>Найдено:3 Сортировка:</span>
       <!-- и всякие селекторы для сортировки -->
     </section>
 
-      
+    <section class='selected-hotel'>
+      <h2 class='visually-hidden'>Перечень подходящих гостиниц</h2>
+      <ul class='selected-hotel-list'>
+        <li class='selected-hotel-item'>
+          <span class='selected-hotel-name'>Amara resort@spa</span>
+          <span class='selected-hotel-accomodation-type'>Гостиница</span>
+          <span class='selected-hotel-price'>от 4000 р.</span>
+          <a class='button' href="#">Подробнее</a>
+          <button type='button'>Забронировать</button>
+          <span class='selected-hotel-stars'>4 звезды</span>
+          <span class='selected-hotel-rating'>Рейтинг: 8,5</span>
+          <img src="img/amara resort.jpg" width="220" height="165" alt="Гостиница «Amara resort@spa»">
+        </li>
+        <li class='selected-hotel-item'>
+          <span class='selected-hotel-name'>Desert Quail Inn</span>
+          <span class='selected-hotel-accomodation-type'>Мотель</span>
+          <span class='selected-hotel-price'>от 3000 р.</span>
+          <a class='button' href="#">Подробнее</a>
+          <button type='button'>Забронировать</button>
+          <span class='selected-hotel-stars'>3 звезды</span>
+          <span class='selected-hotel-rating'>Рейтинг: 8,9</span>
+          <img src="img/desert quail.jpg" width="220" height="165" alt="Мотель «Desert Quail»">
+        </li>
+        <li class='selected-hotel-item'>
+          <span class='selected-hotel-name'>Villas at Poco Diablo</span>
+          <span class='selected-hotel-accomodation-type'>Апартаменты</span>
+          <span class='selected-hotel-price'>от 2000 р.</span>
+          <a class='button' href="#">Подробнее</a>
+          <button type='button'>Забронировать</button>
+          <span class='selected-hotel-stars'>2 звезды</span>
+          <span class='selected-hotel-rating'>Рейтинг: 9,2</span>
+          <img src="img/poco diablo.jpg" width="220" height="165" alt="Апартаменты «Villas at Poco Diablo»">
+        </li>
+
+      </ul>
+
+    </section>
+
   </main>
 
   <footer class='main-footer'>
