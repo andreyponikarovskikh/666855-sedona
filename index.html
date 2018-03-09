@@ -3,25 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href='style.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
+
   <body>
   <header class='main-header'>
     <nav class='main-navigation'>
-      <a class="main-header-logo">
-        <img src="img/sedona-logo.svg" width="" height="" alt="City of Sedona Logo">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="photo&video.html">Фото и видео</a></li>
-        <li><a href="state-map.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+      <!-- с картинкой подумать как семантически оформить. div? -->
+      <span class='main-header-logo'>
+        <img src='' alt='City of Sedona Logo'>
+      </span>
+      <ul class='site-navigation'>
+        <li><a href='info.html'>Информация</a></li>
+        <li><a href='photo&video.html'>Фото и видео</a></li>
+        <li><a href='state-map.html'>Карта штата</a></li>
+        <li><a href='inner.html'>Гостиницы</a></li>
       </ul>
-    <!-- картинка Welcome to Sedona -->
     </nav>
   </header>
   
   <main>
+    <!-- картинка Welcome to Sedona -->
     <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
     <section class='features'>
       <h2 class='visually-hidden'>Преимущества</h2>
@@ -52,7 +54,7 @@
         <h2 class='visually-hidden'>Рекомендации</h2>
         <ul class='recommendations-list'>
           <li class='recommendations-item'>
-            <img src="img/svg/icon-1.svg" width="" height="" alt="Жильё">
+            <img src='img/svg/icon-1.svg' width='' height='' alt='Жильё'>
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем отеле, всё как в кино!</p>
           </li> 
@@ -62,13 +64,75 @@
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class='recommendations-item'>
-            <img src="img/svg/icon-3.svg" width="" height="" alt="Еда">
+            <img src='img/svg/icon-3.svg' width='' height='' alt="Еда">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>  
         </ul>
     </section>
 
+    <section class='hotels-select'>
+      <h2 class='visually-hidden'>Выбор гостиницы</h2>
+      <span>Заинтересовались?<span>
+      <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button type='button'>Поиск гостиницы в Седоне</button>
+    </section>
+
   </main>
+
+  <footer class='main-footer'>
+      <p>
+        #VISITSEDONA
+        <!-- Что это, интерактивный элемент или просто надпись?   -->
+      </p>
+      <div class='footer-social' aria-label='Мы в соц сетях'>
+        <ul>
+          <!-- вставить ссылки на картинки -->
+          <li><a class='social-button' href="#">Twitter</a></li>
+          <li><a class='social-button' href="#">Facebook</a></li>
+          <li><a class='social-button' href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <p class='footer-copyright' aria-label='Сайт разработан'>
+        WEBSITE BY
+        <a class='button' href='https://htmlacademy.ru'>
+          <img src='img/svg/logo-htmlacademy.svg' width='150'  border='0' alt='HTMLacademy'>
+        </a>
+      </p>
+    </footer>  
+
+    <form class="hotels-select-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class='hotels-select-text' for='arrival-date'>Дата заезда :</label>
+          <input class='hotels-arrival-date' id='arrival-date' type='text' name='arrival-date' placeholder='Дата заезда'>
+        </p>
+        <p>
+          <label class='hotels-select-text' for='departure-date'>Дата выезда :</label>
+          <input class='hotels-departure-date' id='departure-date' type='text' name='departure-date' placeholder='Дата выезда'>
+        </p>
+        <p>
+          <label class='hotels-select-text' for='adults-qty'>Взрослые :</label>
+          <input class='hotels-adults-qty' id='adults-qty' type='text' name='adults-qty' placeholder='Взрослые'>
+        </p>
+        <p>
+          <label class='hotels-select-text' for='children-qty'>Дети :</label>
+          <input class='hotels-children-qty' id='children-qty' type='text' name='children-qty' placeholder='Дети'>
+        </p>
+        <button type='submit'>Найти</button>
+    </form>
+
+
+    <section class='modal-map'>
+      <h2 class='visually-hidden'>Как до нас добраться</h2>
+      <p>
+        <img src='img/map.jpg' width='780' height='560' alt='Sedona Visitor Information Center 331 Forest Road Sedona, Arizona Call (800) 288-7336 or (928) 282-7722'>
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
+
+
+
+
