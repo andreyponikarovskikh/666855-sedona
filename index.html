@@ -8,11 +8,10 @@
 
   <body>
   <header class='main-header'>
+    <a class='main-header-logo' href=''>
+          <img src='img/logo-sedona.jpg' width='150px'  border='' alt='City of Sedona Logo'>
+        </a>
     <nav class='main-navigation'>
-      <!-- с картинкой подумать как семантически оформить. div? -->
-      <span class='main-header-logo'>
-        <img src='' alt='City of Sedona Logo'>
-      </span>
       <ul class='site-navigation'>
         <li><a href='index.html'>Информация</a></li>
         <li><a href='photo&video.html'>Фото и видео</a></li>
@@ -81,25 +80,22 @@
   </main>
 
   <footer class='main-footer'>
-      <p>
+    <section class='footer-hashtag'>
         #VISITSEDONA
-        <!-- Что это, интерактивный элемент или просто надпись?   -->
-      </p>
-      <div class='footer-social' aria-label='Мы в соц сетях'>
+      </section>
+      <section class='footer-social' aria-label='Мы в соц сетях'>
         <ul>
-          <!-- вставить ссылки на картинки -->
-          <li><a class='social-button' href="#">Twitter</a></li>
-          <li><a class='social-button' href="#">Facebook</a></li>
-          <li><a class='social-button' href="#">YouTube</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/twitter.svg' width='100px'  border='1' alt='Twitter'>Twitter</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/fb-icon.svg' width='100px'  border='1' alt='Facebook'>Facebook</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/youtube.svg' width='100px'  border='1' alt='YouTube'>YouTube</a></li>
         </ul>
-      </div>
-      <p class='footer-copyright' aria-label='Сайт разработан'>
+      </section>
+      <section class='footer-copyright' aria-label='Сайт разработан'>
         WEBSITE BY
         <a class='button' href='https://htmlacademy.ru'>
           <img src='img/svg/logo-htmlacademy.svg' width='150'  border='0' alt='HTMLacademy'>
         </a>
-      </p>
-    </footer>  
+      </section>
 
     <form class='hotels-select-form' action='https://echo.htmlacademy.ru' method='post'>
         <p>

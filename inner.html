@@ -7,11 +7,10 @@
   </head>
   <body>
   <header class='main-header'>
+    <a class='main-header-logo' href='index.html'>
+          <img src='img/logo-sedona.jpg' width='150px'  border='' alt='City of Sedona Logo'>
+        </a>
     <nav class='main-navigation'>
-      <!-- с картинкой подумать как семантически оформить. div? -->
-      <span class='main-header-logo'>
-        <img src='  alt='City of Sedona Logo'>
-      </span>
       <ul class='site-navigation'>
         <li><a href='index.html'>Информация</a></li>
         <li><a href='photo&video.html'>Фото и видео</a></li>
@@ -24,31 +23,38 @@
   <main>
     <section class=filters>
       <h2 class='visually-hidden'>Критерии выбора гостиницы</h2>
-      <form class='hotels-select-form2' action='https://echo.htmlacademy.ru' method='post'>
-        <h3 class='hotels-select-form2-header'>Инфраструктура:</h2>
-        <input type='checkbox' name='pool' id='checkbox-pool'>
+      <form class='filters-form' action='https://echo.htmlacademy.ru' method='post'>
+        <fieldset class='filters-form-column1'>
+          <legend>Инфраструктура:</legend>
+          <input type='checkbox' name='pool' id='checkbox-pool'>
             <label for='checkbox-pool'>Бассейн</label>
-        <input type='checkbox' name='parking' id='checkbox-parking'>
+          <input type='checkbox' name='parking' id='checkbox-parking'>
             <label for='checkbox-parking'>Парковка</label>
-        <input type='checkbox' name='wifi' id='checkbox-wifi'>
+          <input type='checkbox' name='wifi' id='checkbox-wifi'>
             <label for='checkbox-wifi'>Wi-Fi</label>
+        </fieldset>
 
-        <h3 class='hotels-select-form2-header'>Тип жилья:</h2>
-        <input type='checkbox' name='hotel' id='checkbox-hotel'>
+        <fieldset class='filters-form-column2'>
+          <legend>Тип жилья:</legend>
+          <input type='checkbox' name='hotel' id='checkbox-hotel'>
             <label for='checkbox-hotel'>Гостиница</label>
-        <input type='checkbox' name='motel' id='checkbox-motel'>
+          <input type='checkbox' name='motel' id='checkbox-motel'>
             <label for='checkbox-motel'>Мотель</label>
-        <input type='checkbox' name='apartments' id='checkbox-apartments'>
+          <input type='checkbox' name='apartments' id='checkbox-apartments'>
             <label for='checkbox-apartments'>Апартаменты</label>
+        </fieldset>
 
-        <h3 class='hotels-select-form2-header'>Стоимость в сутки(р):</h2>
-        0<input type='range' min='0' max='5000' step='100' name='price'>5000
-        <button type='submit'>Показать</button>
+        <fieldset class='filters-form-column3'>
+          <legend>Стоимость в сутки(р):</legend>
+          <!--     Здесь не range  -->
+          0<input type='range' min='0' max='5000' step='100' name='price'>5000
+          <button type='submit'>Показать</button>
+        </fieldset>
       </form>
     </section>
 
     <section class='select-summary'>
-      <span>Найдено:3 Сортировка:</span>
+      <p>Найдено:3 Сортировка:</p>
       <!-- и всякие селекторы для сортировки -->
     </section>
 
@@ -60,7 +66,7 @@
           <div class=product-image>
             <img src="img/amara resort.jpg" width="220" height="165" alt="Гостиница «Amara resort@spa»">
           </div>
-
+          <!-- карточка Amara Resort -->
           <div class='product-info'>
             <p class='product-name'>Amara resort@spa</p>
             <p class='product-acc type'>Гостиница</p>
@@ -120,24 +126,22 @@
   </main>
 
   <footer class='main-footer'>
-      <p>
+      <section class='footer-hashtag'>
         #VISITSEDONA
-        <!-- Что это, интерактивный элемент или просто надпись?   -->
-      </p>
-      <div class='footer-social' aria-label='Мы в соц сетях'>
+      </section>
+      <section class='footer-social' aria-label='Мы в соц сетях'>
         <ul>
-          <!-- вставить ссылки на картинки -->
-          <li><a class='social-button' href="#">Twitter</a></li>
-          <li><a class='social-button' href="#">Facebook</a></li>
-          <li><a class='social-button' href="#">YouTube</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/twitter.svg' width='100px'  border='1' alt='Twitter'>Twitter</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/fb-icon.svg' width='100px'  border='1' alt='Facebook'>Facebook</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/youtube.svg' width='100px'  border='1' alt='YouTube'>YouTube</a></li>
         </ul>
-      </div>
-      <p class='footer-copyright' aria-label='Сайт разработан'>
+      </section>
+      <section class='footer-copyright' aria-label='Сайт разработан'>
         WEBSITE BY
         <a class='button' href='https://htmlacademy.ru'>
           <img src='img/svg/logo-htmlacademy.svg' width='150'  border='0' alt='HTMLacademy'>
         </a>
-      </p>
+      </section>
     </footer>  
 
   </body>
