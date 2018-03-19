@@ -8,7 +8,7 @@
   <body>
   <header class='main-header'>
     <a class='main-header-logo' href='index.html'>
-          <img src='img/logo-sedona.jpg' width='150px'  border='' alt='City of Sedona Logo'>
+          <img src='img/svg/logo-sedona.svg' width='138px'  border='' alt='City of Sedona Logo'>
         </a>
     <nav class='main-navigation'>
       <ul class='site-navigation'>
@@ -48,14 +48,23 @@
           <legend>Стоимость в сутки(р):</legend>
           <!--     Здесь не range  -->
           0<input type='range' min='0' max='5000' step='100' name='price'>5000
+          </fieldset>
           <button type='submit'>Показать</button>
-        </fieldset>
       </form>
     </section>
 
-    <section class='select-summary'>
-      <p>Найдено:3 Сортировка:</p>
-      <!-- и всякие селекторы для сортировки -->
+    <section class='summary'>
+       <h2 class='visually-hidden'>Итого выбрано</h2>
+          <b>Найдено:3 </b>
+          <ul class='summary-sorting-list'>
+            <li class='summary-sort-item'><a href=#>По цене</a></li>
+            <li class='summary-sort-item'><a href=#>По типу</a></li>
+            <li class='summary-sort-item'><a href=#>По рейтингу</a></li>
+          </ul>
+          <ul class='summary-sort-order'>
+            <li class='summary-sort-ascending'><a href=#>По возрастанию</a></li>
+            <li class='summary-sort-descending'><a href=#>По убыванию</a></li>
+          </ul>
     </section>
 
     <section class='product'>
@@ -63,16 +72,13 @@
       <ul class='product-list'>
         <!-- карточка Amara resort -->
         <li class='product-item'>
-          <div class=product-image>
-            <img src="img/amara resort.jpg" width="220" height="165" alt="Гостиница «Amara resort@spa»">
-          </div>
-          <!-- карточка Amara Resort -->
           <div class='product-info'>
-            <p class='product-name'>Amara resort@spa</p>
+            <h3><a href=#>Amara resort & spa</a></h3>
+            <img src="img/amara resort.jpg" width="135" height="90" alt="Гостиница «Amara resort@spa»">
             <p class='product-acc type'>Гостиница</p>
             <p class='product-price'>от 4000 р.</p>
             <a class='button' href="#">Подробнее</a>
-            <button type='button'>Забронировать</button>  
+            <a class='button' href="#">Забронировать</a>  
           </div>
 
           <div class='product-rating'>
@@ -80,18 +86,16 @@
             <p class='product-hotel-rating'>Рейтинг: 8,5</p>  
           </div>
         </li>
+
         <!-- карточка Desert Quail -->
         <li class='product-item'>
-          <div class=product-image>
-              <img src="img/desert quail.jpg" width="220" height="165" alt="Мотель «Desert Quail»">
-          </div>
-
           <div class='product-info'>
-            <p class='product-name'>Desert Quail Inn</p>
+            <h3><a href=#>Desert Quail Inn</a></h3>
+            <img src="img/desert quail.jpg" width="135" height="90" alt="Мотель «Desert Quail»">
             <p class='product-acc type'>Мотель</p>
             <p class='product-price'>от 3000 р.</p>
             <a class='button' href="#">Подробнее</a>
-            <button type='button'>Забронировать</button>  
+            <a class='button' href="#">Забронировать</a>  
           </div>
 
           <div class='product-rating'>
@@ -99,18 +103,16 @@
             <p class='product-hotel-rating'>Рейтинг: 8,9</p>  
           </div>
         </li>
+
         <!-- карточка Poco Diablo -->
         <li class='product-item'>
-          <div class=product-image>
-              <img src="img/desert quail.jpg" width="220" height="165" alt="Мотель «Desert Quail»">
-          </div>
-
           <div class='product-info'>
-            <p class='product-name'>Villas at Poco Diablo</p>
+            <h3><a href=#>Villas at Poco Diablo</a></h3>
+            <img src="img/poco diablo.jpg" width="135" height="90" alt="Апартаменты «Poco Diablo»">
             <p class='product-acc type'>Апартаменты</p>
             <p class='product-price'>от 2000 р.</p>
             <a class='button' href="#">Подробнее</a>
-            <button type='button'>Забронировать</button>  
+            <a class='button' href="#">Забронировать</a>  
           </div>
 
           <div class='product-rating'>
@@ -131,15 +133,15 @@
       </section>
       <section class='footer-social' aria-label='Мы в соц сетях'>
         <ul>
-          <li><a class='social-button' href="#"><img src='img/svg/twitter.svg' width='100px'  border='1' alt='Twitter'>Twitter</a></li>
-          <li><a class='social-button' href="#"><img src='img/svg/fb-icon.svg' width='100px'  border='1' alt='Facebook'>Facebook</a></li>
-          <li><a class='social-button' href="#"><img src='img/svg/youtube.svg' width='100px'  border='1' alt='YouTube'>YouTube</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/twitter.svg' width='46px'  border='1' alt='Twitter'>Twitter</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/fb-icon.svg' width='46px'  border='1' alt='Facebook'>Facebook</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/youtube.svg' width='46px'  border='1' alt='YouTube'>YouTube</a></li>
         </ul>
       </section>
       <section class='footer-copyright' aria-label='Сайт разработан'>
         WEBSITE BY
-        <a class='button' href='https://htmlacademy.ru'>
-          <img src='img/svg/logo-htmlacademy.svg' width='150'  border='0' alt='HTMLacademy'>
+        <a class='button' href='https://htmlacademy.ru/intensive/htmlcss'>
+          <img src='img/svg/logo-htmlacademy.svg' width='115'  border='0' alt='HTMLacademy'>
         </a>
       </section>
     </footer>  

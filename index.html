@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
     <link href='css/style.css' rel='stylesheet'>
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
 
   <body>
   <header class='main-header'>
     <a class='main-header-logo' href=''>
-          <img src='img/logo-sedona.jpg' width='150px'  border='' alt='City of Sedona Logo'>
+          <img src='img/svg/logo-sedona.svg' width='138px'  border='' alt='City of Sedona Logo'>
         </a>
     <nav class='main-navigation'>
       <ul class='site-navigation'>
@@ -23,9 +25,10 @@
   
   <main>
     <!-- будет background-image картинка Welcome to Sedona -->
-    <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h1 class='visually-hidden'> Обзор Седоны (Аризона)</h1>
     <section class='features'>
       <h2 class='visually-hidden'>Преимущества</h2>
+      <p><b>Седона-небольшой городок в Аризоне, заслуживающий большего!</b></p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
       <ul class='features-list'>
@@ -46,12 +49,11 @@
           <h3>Мало туристов</h3>
           <p>Большинство едет в Гранд-Каньон и толпится там</p>
         </li>
-      </ul>
-    </section>
-
-    <section class='recommendations'>
-        <h2 class='visually-hidden'>Рекомендации</h2>
-        <ul class='recommendations-list'>
+     <!-- по семантике мне кажется лучше сделать отдельным вложенным списком 2-го уровня  recommendations-list
+     или не выпендриваться и продлить список 1-го уровня -->
+        
+        <li class='recommendations-list'> 
+          <h2 class='visually-hidden'>Рекомендации</h2>
           <li class='recommendations-item'>
             <img src='img/svg/icon-1.svg' width='' height='' alt='Жильё'>
             <h3>Жильё</h3>
@@ -67,35 +69,18 @@
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>  
-        </ul>
+        </li>
+
+      </ul>
     </section>
+
 
     <section class='hotels-select'>
       <h2 class='visually-hidden'>Выбор гостиницы</h2>
-      <span>Заинтересовались?<span>
+      <b>Заинтересовались?<b>
       <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button type='button'>Поиск гостиницы в Седоне</button>
     </section>
-
-  </main>
-
-  <footer class='main-footer'>
-    <section class='footer-hashtag'>
-        #VISITSEDONA
-      </section>
-      <section class='footer-social' aria-label='Мы в соц сетях'>
-        <ul>
-          <li><a class='social-button' href="#"><img src='img/svg/twitter.svg' width='100px'  border='1' alt='Twitter'>Twitter</a></li>
-          <li><a class='social-button' href="#"><img src='img/svg/fb-icon.svg' width='100px'  border='1' alt='Facebook'>Facebook</a></li>
-          <li><a class='social-button' href="#"><img src='img/svg/youtube.svg' width='100px'  border='1' alt='YouTube'>YouTube</a></li>
-        </ul>
-      </section>
-      <section class='footer-copyright' aria-label='Сайт разработан'>
-        WEBSITE BY
-        <a class='button' href='https://htmlacademy.ru'>
-          <img src='img/svg/logo-htmlacademy.svg' width='150'  border='0' alt='HTMLacademy'>
-        </a>
-      </section>
 
     <form class='hotels-select-form' action='https://echo.htmlacademy.ru' method='post'>
         <p>
@@ -117,15 +102,34 @@
         <button type='submit'>Найти</button>
     </form>
 
-
     <section class='modal-map'>
       <h2 class='visually-hidden'>Как до нас добраться</h2>
       <p>
-        <img src='img/map.jpg' width='780' height='560' alt='Sedona Visitor Information Center 331 Forest Road Sedona, Arizona Call (800) 288-7336 or (928) 282-7722'>
+        <img src='img/map.jpg' width='1200px' height='' alt='Sedona Visitor Information Center 331 Forest Road Sedona, Arizona Call (800) 288-7336 or (928) 282-7722'>
       </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
+  </main>
+
+  <footer class='main-footer'>
+    <section class='footer-hashtag'>
+        #VISITSEDONA
+      </section>
+      <section class='footer-social' aria-label='Мы в соц сетях'>
+        <ul>
+          <li><a class='social-button' href="#"><img src='img/svg/twitter.svg' width='46px'  border='1' alt='Twitter'>Twitter</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/fb-icon.svg' width='46px'  border='1' alt='Facebook'>Facebook</a></li>
+          <li><a class='social-button' href="#"><img src='img/svg/youtube.svg' width='46px'  border='1' alt='YouTube'>YouTube</a></li>
+        </ul>
+      </section>
+      <section class='footer-copyright' aria-label='Сайт разработан'>
+        WEBSITE BY
+        <a class='button' href='https://htmlacademy.ru/intensive/htmlcss'>
+          <img src='img/svg/logo-htmlacademy.svg' width='115'  border='0' alt='HTMLacademy'>
+        </a>
+      </section>
+  
   </body>
 </html>
 
