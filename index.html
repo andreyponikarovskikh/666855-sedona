@@ -11,7 +11,7 @@
   <body>
   <header class='main-header'>
     <a class='main-header-logo' href=''>
-          <img src='img/svg/logo-sedona.svg' width='138px'  border='' alt='City of Sedona Logo'>
+          <img src='img/svg/logo-sedona.svg' width='138'  alt='City of Sedona Logo'>
         </a>
     <nav class='main-navigation'>
       <ul class='site-navigation'>
@@ -25,7 +25,7 @@
   
   <main>
     <section class=intro>
-      <img src='#' width=''  border='' alt='Welcome to Sedona'>
+      <img src='#' width='0'  alt='Welcome to Sedona'>
       <!-- будет background-image картинка Welcome to Sedona 
         и к ней снизу какой-нибудь transform  rotate
       -->
@@ -46,21 +46,23 @@
         <li class='feature-item'>
           <h3>Там есть мост дьявола</h3>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </li><li class='feature-item'>
+        </li>
+        <li class='feature-item'>
           <h3>Небольшая площадь</h3>
           <p>Все достопримечательности находятся очень близко</p>
-        </li><li class='feature-item'>
+        </li>
+        <li class='feature-item'>
           <h3>Красивая дорога</h3>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li><li class='feature-item'>
+        </li>
+        <li class='feature-item'>
           <h3>Мало туристов</h3>
           <p>Большинство едет в Гранд-Каньон и толпится там</p>
         </li>
      <!-- по семантике мне кажется лучше сделать отдельным вложенным списком 2-го уровня  recommendations-list
-     или не выпендриваться и продлить список 1-го уровня -->
+     и в браузере симпатичнее отображается, но валидатор ругается -->
         
-        <li class='recommendations-list'> 
-          <h2 class='visually-hidden'>Рекомендации</h2>
+     <!--   <ul class='recommendations-list'> --> 
           <li class='recommendations-item'>
            <!-- будет фоном  <img src='img/svg/icon-1.svg' width='' height='' alt='Жильё'>  -->
             <h3>Жильё</h3>
@@ -75,8 +77,7 @@
             <!-- <img src='img/svg/icon-3.svg' width='' height='' alt="Еда"> -->
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
-          </li>  
-        </li>
+          </li>
 
       </ul>
     </section>
@@ -84,7 +85,7 @@
 
     <section class='hotels-select'>
       <h2 class='visually-hidden'>Выбор гостиницы</h2>
-      <b>Заинтересовались?<b>
+      <b>Заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button type='button'>Поиск гостиницы в Седоне</button>
     </section>
@@ -112,7 +113,7 @@
     <section class='modal-map'>
       <h2 class='visually-hidden'>Как до нас добраться</h2>
       <p>
-        <img src='img/map.jpg' width='1200px' height='' alt='Sedona Visitor Information Center 331 Forest Road Sedona, Arizona Call (800) 288-7336 or (928) 282-7722'>
+        <img src='img/map.jpg' width='1200'  alt='Sedona Visitor Information Center 331 Forest Road Sedona, Arizona Call (800) 288-7336 or (928) 282-7722'>
       </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
@@ -134,9 +135,10 @@
       <section class='footer-copyright' aria-label='Сайт разработан'>
         WEBSITE BY
         <a class='button' href='https://htmlacademy.ru/intensive/htmlcss'>
-          <img src='img/svg/logo-htmlacademy.svg' width='115'  border='0' alt='HTMLacademy'>
+          <img src='img/svg/logo-htmlacademy.svg' width='115'  alt='HTMLacademy'>
         </a>
       </section>
+    </footer>
   
   </body>
 </html>
