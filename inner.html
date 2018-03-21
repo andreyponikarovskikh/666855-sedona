@@ -55,10 +55,12 @@
           <label>   
             до<input type='number' name='max-price'>
           </label>
-          <!--     Здесь как-то сделать 2 bar'a  -->
-          <input type='range' min='0' max='5000' step='100' name='price'>
-          </fieldset>
-          <button type='submit'>Показать</button>
+          <div class='price-scale'>left</div>
+          <div class='price-scale'>right</div>
+          <button type='submit' name='min-price-button'></button>
+          <button type='submit' name='max-price-button'></button>
+        </fieldset>
+        <button type='submit'>Показать</button>
       </form>
     </section>
 
@@ -70,11 +72,12 @@
             <li class='summary-sort-item'><a href=#>По типу</a></li>
             <li class='summary-sort-item'><a href=#>По рейтингу</a></li>
           </ul>
-          <div class='summary-sort-order'>
-          <!-- div'ом обернул для стилизации -->
-            <button class='summary-sort-ascending' type='submit'>По возрастанию</button>
-            <button class='summary-sort-descending' type='submit'>По убыванию</button>
-          </div>
+          <ul class='summary-sort-order'>
+          <!-- почему не кнопка?  1.Правила Вадима Макеева :)
+                                  2. Валидатор ругается  -->
+            <a class='summary-sort-ascending' href="#">По возрастанию</a>
+            <a class='summary-sort-descending' href="#">По убыванию</a>
+          </ul>
     </section>
 
     <section class='catalog'>
@@ -82,38 +85,62 @@
       <ul class='product-list'>
         <!-- карточка Amara resort -->
         <li class='product-item'>
-            <h3><a href=#>Amara resort & spa</a></h3>
+          <div class='product-image'>
             <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница «Amara resort@spa»">
+          </div>
+
+          <div class=product-info>
+            <h3><a href=#>Amara resort & spa</a></h3>
             <p class='product-acc type'>Гостиница</p>
             <p class='product-price'>от 4000 р.</p>
             <a class='button' href="#">Подробнее</a>
-            <a class='button' href="#">Забронировать</a>  
+            <a class='button' href="#">Забронировать</a>
+          </div>
+
+          <div class='product-rating'>  
             <p class='product-stars'>4 звезды</p>
-            <p class='product-hotel-rating'>Рейтинг: 8,5</p>  
+            <p class='product-hotel-rating'>Рейтинг: 8,5</p>
+          </div>
         </li>
 
         <!-- карточка Desert Quail -->
         <li class='product-item'>
-            <h3><a href=#>Desert Quail Inn</a></h3>
+          <div class='product-image'>
             <img src="img/desert-quail.jpg" width="135" height="90" alt="Мотель «Desert Quail»">
+          </div>
+
+          <div class=product-info>
+            <h3><a href=#>Desert Quail Inn</a></h3>
             <p class='product-acc type'>Мотель</p>
             <p class='product-price'>от 3000 р.</p>
             <a class='button' href="#">Подробнее</a>
-            <a class='button' href="#">Забронировать</a>  
+            <a class='button' href="#">Забронировать</a>
+          </div>
+
+          <div class='product-rating'>
             <p class='product-stars'>3 звезды</p>
             <p class='product-hotel-rating'>Рейтинг: 8,9</p>  
+          </div>
         </li>
 
         <!-- карточка Poco Diablo -->
         <li class='product-item'>
-            <h3><a href=#>Villas at Poco Diablo</a></h3>
+          <div class='product-image'>
             <img src="img/poco-diablo.jpg" width="135" height="90" alt="Апартаменты «Poco Diablo»">
+          </div>
+
+          <div class=product-info>
+            <h3><a href=#>Villas at Poco Diablo</a></h3>
             <p class='product-acc type'>Апартаменты</p>
             <p class='product-price'>от 2000 р.</p>
             <a class='button' href="#">Подробнее</a>
-            <a class='button' href="#">Забронировать</a>  
+            <a class='button' href="#">Забронировать</a>
+          </div>
+
+          <div class='product-rating'>
             <p class='product-stars'>2 звезды</p>
-            <p class='product-hotel-rating'>Рейтинг: 9,2</p>  
+            <p class='product-hotel-rating'>Рейтинг: 9,2</p>
+          </div>  
         </li>
 
       </ul>
@@ -124,7 +151,7 @@
 
   <footer class='main-footer'>
       <section class='footer-hashtag'>
-        #VISITSEDONA
+        <a href="">#VISITSEDONA</a>
       </section>
       <section class='footer-social' aria-label='Мы в соц сетях'>
         <ul>
