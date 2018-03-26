@@ -10,7 +10,12 @@ body{
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #f2f2f2 
+  /* background-color: #f2f2f2 */
+
+  /* Временно для сетки */
+  background-image: url('../temp/sedona-index-1200.jpg');
+  background-size: 1280px auto;
+  background-repeat: no-repeat;
 
 }
 
@@ -18,19 +23,43 @@ main{
   text-align: center;
  }
 
+a{
+  text-decoration: none;
+}
+
+
 .main-header{
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  font-style: bold;
+  /*  1.нужно ли вставлять bold? 
+      2. на экране надписи всё-равно кажутся не такими жирными, как на оригинальной картинке  */
   color: #000000;
-  text-decoration: none;
-  /* подчёркивание не убирает у ссылок. Разобраться как убрать */  
   background-color: #ffffff;
+
+  margin-bottom: 56px;
+  background-color: transparent;
 }
 
-.site-navigation {
+.main-header-logo{
+  width: 138px;
+  height: 70px;
+}
+
+.site-navigation,
+.features-list,
+.recommendations-list,
+.footer-social ul{
 list-style: none;
 }
+
+.site-navigation{
+  display: flex;  
+  justify-content: space-around;
+}
+
+
 
 .main-navigation a{ 
   color: #000000;
@@ -58,9 +87,6 @@ list-style: none;
   
 }
 
-.features-list {
-  list-style: none;
-}
 .features h1{
   font-size: 21px;
   line-height: 26px;
@@ -103,9 +129,6 @@ list-style: none;
 }
 
 
-.recommendations-list{
-  list-style: none;
-}
 .recommendations-item{
   font-size: 21px;
   line-height: 21px;
@@ -213,9 +236,6 @@ list-style: none;
   color: #000000;
 }
 
-.footer-social ul{
-  list-style: none;
-}
 /* делаем всё тремя разными вариантами картинок ? */
 .social-button {
   color: #ffffff;
