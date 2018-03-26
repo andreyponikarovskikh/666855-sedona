@@ -37,34 +37,31 @@
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
       <ul class='features-list'>
-        <li class='feature-item'>
+        <li class='feature-item-blue'>
           <h3>Настоящий городок</h3>
           <p>Седона-не аттракцион для туристов. Там течёт своя жизнь</p>
           <img src='img/town.jpg'    alt='Welcome to Sedona' >
         </li>
-        <li class='feature-item'>
+        <li class='feature-item-blue'>
           <h3>Там есть мост дьявола</h3>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           <img src='img/devils-bridge.jpg'    alt='Welcome to Sedona'>
         </li>
-        <li class='feature-item'>
+        <li class='feature-item-grey'>
           <h3>Небольшая площадь</h3>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li class='feature-item'>
+        <li class='feature-item-grey'>
           <h3>Красивая дорога</h3>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class='feature-item'>
+        <li class='feature-item-grey'>
           <h3>Мало туристов</h3>
           <p>Большинство едет в Гранд-Каньон и толпится там</p>
         </li>
 
         <li class='feature-item'>
           <ul class='recommendations-list'>
-          <!-- Для доступности, как добавить описание этого блока? Или ничего не делать?
-          На h2 ругается валидатор  
-          <h2 class='visually-hidden'>Рекомендации</h2>  -->
             <li class='recommendations-item'>
               <!-- будет фоном  <img src='img/svg/icon-1.svg' width='' height='' alt='Жильё'>  -->
               <h3>Жильё</h3>
@@ -91,7 +88,7 @@
       <h2 class='visually-hidden'>Выбор гостиницы</h2>
       <b>Заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button type='button'>Поиск гостиницы в Седоне</button>
+      <button type='button' class='form-open-button'>Поиск гостиницы в Седоне</button>
     
       <form class='hotels-select-form' action='https://echo.htmlacademy.ru' method='post'>
         <p>
@@ -104,13 +101,13 @@
         </p>
         <p>
           <label class='hotels-select-text' for='adults-qty'>Взрослые :</label>
-          <input class='hotels-adults-qty' id='adults-qty' type='text' name='adults-qty' placeholder='Взрослые'>
+          <input class='hotels-adults-qty' id='adults-qty' type='number' name='adults-qty' placeholder='Взрослые'>
         </p>
         <p>
           <label class='hotels-select-text' for='children-qty'>Дети :</label>
-          <input class='hotels-children-qty' id='children-qty' type='text' name='children-qty' placeholder='Дети'>
+          <input class='hotels-children-qty' id='children-qty' type='number' name='children-qty' placeholder='Дети'>
         </p>
-        <button type='submit'>Найти</button>
+        <button type='submit' class='form-close-button'>Найти</button>
       </form>
     </section>  
 
