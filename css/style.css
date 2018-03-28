@@ -38,7 +38,7 @@ list-style: none;
   color: #000000;
   background-color: #ffffff;
 
-  margin-bottom: 56px;
+  margin-bottom: 0px;
   background-color: transparent;
 
   z-index: 2;
@@ -101,6 +101,35 @@ list-style: none;
   padding-left: 0;
 }
 
+.intro{
+  margin: 0 auto;
+  /* или тут сбрасывать границы излишне?*/
+  padding: 92px 0 0 0;
+  line-height: 26px;
+  min-height: 510px;
+  background-image: url("../img/background-photo.jpg");
+  background-size:  cover;
+  background-position:  0 -40px;
+  /* в Pixel Perfect по картинке с надписью полное совпадение, а вот по бэкграунду беда :) 
+  Пока оставлю так 
+  */
+  background-repeat: no-repeat;  
+}
+
+.features{
+  line-height: 26px;
+  color: #000000;
+}
+
+.features h1{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  font-style: 700;
+  margin: -18px 370px 40px;
+  padding: 0;
+  margin-bottom: 15px;
+}
 
 
 
