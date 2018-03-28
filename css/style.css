@@ -1,5 +1,5 @@
 body{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 1200px;
 
@@ -10,41 +10,18 @@ body{
   color: #333333;
   text-transform: uppercase;
 
-  /* background-color: #f2f2f2 */
-
-  /* Временно для сетки */
-  background-image: url('../temp/sedona-index-1200.jpg');
-  background-size: 1280px auto;
-  background-repeat: no-repeat;
-
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 1, 0.2);
 }
 
-main{
-  text-align: center;
- }
+html{
+  background-color: #f2f2f2;
+}
 
 a{
   text-decoration: none;
-}
-
-
-.main-header{
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  font-style: bold;
-  /*  1.нужно ли вставлять bold? 
-      2. на экране надписи всё-равно кажутся не такими жирными, как на оригинальной картинке  */
-  color: #000000;
-  background-color: #ffffff;
-
-  margin-bottom: 56px;
-  background-color: transparent;
-}
-
-.main-header-logo{
-  width: 138px;
-  height: 70px;
+  color: inherit;
 }
 
 .site-navigation,
@@ -54,139 +31,83 @@ a{
 list-style: none;
 }
 
+.main-header{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+
+  margin-bottom: 56px;
+  background-color: transparent;
+
+  z-index: 2;
+  border: 2 solid blue;
+  /* тут я хотел бы увидеть границу менюшки, но не работает ... */
+}
+
+.main-header-logo{
+  position: absolute;
+  z-index: 10; /* на всякий случай :) */
+  width: 138px;
+  height: 70px;
+  margin:  0;
+  padding: 0; 
+  margin-left: -69px;
+  /* а как правильно сцентрировать? */
+
+}
+
 .site-navigation{
+  margin: 0;
+  padding: 0;
   display: flex;  
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.site-navigation li{
+  margin-top: 14px;
+  width: 25%;
+  border: 2 solid blue;
+}
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2){
+  text-align: left;
+}
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4){
+  text-align: right;
+}
+.site-navigation a:hover,
+.site-navigation a:focus{
+  color: #81b3d2;
+}
+.site-navigation a:active{
+  color: rgba(0, 0, 0, 0.3);  
+}
+
+/* тут хотел спозиционировать, но не получилось
+похоже, пэддинги присваиваются для всех лишек а не индивидуально
+*/
+.site-navigation li:nth-child(1){
+  padding-left: 70px;
+}
+.site-navigation li:nth-child(2){
+  padding-right: 160px;
+}
+.site-navigation li:nth-child(3){
+  padding-left: 0;
+}
+.site-navigation li:nth-child(4){
+  padding-left: 0;
 }
 
 
 
-.main-navigation a{ 
-  color: #000000;
-}
-.main-navigation a:hover{
- color: #81b3d2 
-}
-.main-navigation a:active {
-  color: rgba(0,0,0,0.3)
-} /* opacity 30% */
 
 
 
-.intro{
-  display: flex;
-  min-height: 510px;
-  background-image: url("../img/background-photo.jpg");
-  background-size:  auto;
-  background-position: top left;
-  background-repeat: no-repeat;   
-}
-
-.intro img{
-  margin:  auto ;  /* выравнивание по центру, потом спозиционировать */
-  
-}
-
-.features h1{
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-    
-  background-color: #ffffff;
-}
-.features p{
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #000000;
-    
-  background-color: #ffffff;
-}
-
-.feature-item h3{
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-}
-.feature-item p{
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 400;
-}
-.feature-item-blue {
-  font-size: 21px;
-  line-height: 21px;
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-/* почему .feature-item-blue p не голубое? */
-.feature-item-grey {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #eeeeee;
-}
 
 
-.recommendations-item{
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #ffffff; 
-}
-
-
-.hotels-select b{
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-}
-.hotels-select p{
-  font-size: 21px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.hotels-select-form{
-  box-shadow: 0 0 15px 7px rgba(0,1,1,0.15);
-  width: 586px;
-  height: 395px;
-  margin-left: 310px;
-  background-color: #ffffff;
-}
-
-.hotels-select-text{
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.hotels-select-form input[type="text"],
-.hotels-select-form input[type="number"] {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-
-  background-color: #f2f2f2;
-  border: none;
-}
-.hotels-select-form input[type="text"]:hover{
-  color: #000000;
-  background-color: #ebebeb;
-}
-.hotels-select-form input[type="text"]:focus{
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #e5e5e5;
-}
-
-.hotels-select-form input[type="number"]:hover{
-  background-color: #ffffff
-  /* меняем картинки при разных состояниях? */
-}
 
 
 .form-open-button{
@@ -236,17 +157,8 @@ list-style: none;
   color: #000000;
 }
 
-/* делаем всё тремя разными вариантами картинок ? */
-.social-button {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-.social-button:hover{
-  background-color: #669ec0;
-}
-.social-button:active{
-  background-color: #5496bd;
-}
+
+
 
 
 
