@@ -16,6 +16,10 @@ body{
 
 }
 
+* {
+   outline: 1px solid blue;
+}
+
 html{
   background-color: #f2f2f2;
 }
@@ -42,7 +46,6 @@ list-style: none;
   margin-bottom: 0px;
   background-color: transparent;
 
-  outline: 1px solid blue;
 }
 
 .main-header-logo{
@@ -61,8 +64,6 @@ list-style: none;
   padding-left: 57px;
   padding-right: 60px;
 }
-/* пробовал и space-between и space-around
-   ширину 20% и 25% - без корректировки margin точно не подгоняется */
 .site-navigation{
   margin: 0;
   padding: 0;
@@ -74,7 +75,6 @@ list-style: none;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 20%;
-    outline: 1px solid blue;
 }
 
 .site-navigation li:nth-child(2) {
@@ -99,11 +99,10 @@ list-style: none;
 
 
 .intro{
-  margin: 0 auto;
-  /* или тут сбрасывать границы излишне?*/
-  padding: 75px 0 0 0;
+  margin: 0;
+  padding: 75px 0 12px 0;
   line-height: 26px;
-  min-height: 510px;
+  height: 510px;
   background-image: url("../img/background-photo.jpg");
   background-size:  cover;
   background-position:  0 -40px;
@@ -116,7 +115,6 @@ list-style: none;
 .intro img{
   width: 458px;
   height: 352px;
-  outline: 1px solid blue;
 }
 
 .features{
@@ -128,24 +126,24 @@ list-style: none;
   display: inline-block;
   vertical-align: middle;
   font-size: 21px;
-  font-style: 700;
-  margin: -18px 370px 40px;
+  font-weight: 700;
+  margin: -27px 370px 25px;
   padding: 0;
-  margin-bottom: 15px;
-
-  outline: 1px solid blue;
 }
 
 .features h3{
   font-size: 21px;
   font-style: 700;
-
-  outline: 1px solid blue;
 }
 
 .features p{
-  margin-bottom: 52px;
-  outline: 1px solid blue;
+  margin: 0 57px 52px 57px;
+}
+
+.features span{
+  margin: 0 0 0 0;
+  line-height: 34px;
+
 }
 
 .features-list{
@@ -161,11 +159,7 @@ list-style: none;
 .feature-item-grey,
 .recommendations-item {
   width: 400px;
-
-  outline: 1px solid blue;
 }
-
-
 
 .feature-item-blue{
   display: flex;
@@ -174,7 +168,6 @@ list-style: none;
   background-color: #81b3d2;
   width: 1200px;
   height: 256px;
-
 }
 
 .feature-item-blue img{
@@ -234,8 +227,6 @@ list-style: none;
 .hotels-select{
   width: 1200px;
   height: 292px;
-
-  outline: 1px solid blue;
 }
 .hotels-select b{
   display: block;
@@ -245,15 +236,11 @@ list-style: none;
   padding-top: 53px;
 
   vertical-align: middle;
-
-  outline: 1px solid blue;
 }
 
 .hotels-select p{
   padding-top: 28px;
   margin: 0 370px 50px 370px; 
-
-  outline: 1px solid blue;
 }
 
 .form-open-button{
@@ -268,8 +255,6 @@ list-style: none;
   width: 568px;
   height: 86px;
   padding-bottom: 0px;
-
-  outline: 1px solid blue;
 }
 .form-open-button:hover{
   background-color: #604e43;
@@ -302,8 +287,6 @@ list-style: none;
   width: 1200px;
   height: 593px;
   margin-bottom: -130px;
-
-  outline: 1px solid blue;
 }
 
 .main-footer{
@@ -313,12 +296,12 @@ list-style: none;
   opacity: 0.9;
   justify-content: space-around;
   align-items: center;
-
-  outline: 1px solid blue;
 }
 
 
 .footer-hashtag {
+  margin-left:  8px;
+  width: 136px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -326,9 +309,71 @@ list-style: none;
 }
 
 
+.footer-social ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.social-button {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  
+}
 
+/*что-то не срабатывает 
+.social-button:nth-of-type(1){
+  background-image: url("../img/svg/twitter.svg");
+}
+.social-button:nth-of-type(2){
+  background-image: url("../img/svg/fb-icon.svg");
+}  
+.social-button:nth-of-type(3){
+  background-image: url("../img/svg/youtube.svg");
+}
+*/
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
 
+.social-button:active {
+  background-color: #5496bd;
+}
 
+.social-button:active path {
+  fill: #88b6d1;
+}
+
+.footer-copyright {
+  display: flex;
+  margin-right: -37px;
+}
+.footer-copyright p{
+  margin: 10px 0 0 0;
+}
+.footer-copyright a {
+  position: relative;
+  display: block;
+  width: 115px;
+  height: 41px;
+}
+
+.footer-copyright a:hover path,
+.footer-copyright a:focus path {
+  fill: #81b3d2;
+}
+
+.footer-copyright a:active path {
+  fill: #bdbbbc;
+}
 
 
 
