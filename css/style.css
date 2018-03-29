@@ -13,6 +13,7 @@ body{
   background-color: #ffffff;
   text-align: center;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 1, 0.2);
+
 }
 
 html{
@@ -41,9 +42,7 @@ list-style: none;
   margin-bottom: 0px;
   background-color: transparent;
 
-  z-index: 2;
-  border: 2 solid blue;
-  /* тут я хотел бы увидеть границу менюшки, но не работает ... */
+  outline: 1px solid blue;
 }
 
 .main-header-logo{
@@ -58,17 +57,30 @@ list-style: none;
 
 }
 
+.main-navigation{
+  padding-left: 57px;
+  padding-right: 60px;
+}
+/* пробовал и space-between и space-around
+   ширину 20% и 25% - без корректировки margin точно не подгоняется */
 .site-navigation{
   margin: 0;
   padding: 0;
   display: flex;  
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 .site-navigation li{
-  margin-top: 14px;
-  width: 25%;
-  border: 2 solid blue;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 20%;
+    outline: 1px solid blue;
 }
+
+.site-navigation li:nth-child(2) {
+  margin-right: 10%;
+}
+
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2){
   text-align: left;
@@ -85,26 +97,11 @@ list-style: none;
   color: rgba(0, 0, 0, 0.3);  
 }
 
-/* тут хотел спозиционировать, но не получилось
-похоже, пэддинги присваиваются для всех лишек а не индивидуально
-*/
-.site-navigation li:nth-child(1){
-  padding-left: 70px;
-}
-.site-navigation li:nth-child(2){
-  padding-right: 160px;
-}
-.site-navigation li:nth-child(3){
-  padding-left: 0;
-}
-.site-navigation li:nth-child(4){
-  padding-left: 0;
-}
 
 .intro{
   margin: 0 auto;
   /* или тут сбрасывать границы излишне?*/
-  padding: 92px 0 0 0;
+  padding: 75px 0 0 0;
   line-height: 26px;
   min-height: 510px;
   background-image: url("../img/background-photo.jpg");
@@ -114,6 +111,12 @@ list-style: none;
   Пока оставлю так 
   */
   background-repeat: no-repeat;  
+}
+
+.intro img{
+  width: 458px;
+  height: 352px;
+  outline: 1px solid blue;
 }
 
 .features{
@@ -129,14 +132,23 @@ list-style: none;
   margin: -18px 370px 40px;
   padding: 0;
   margin-bottom: 15px;
+
+  outline: 1px solid blue;
 }
 
 .features h3{
   font-size: 21px;
   font-style: 700;
+
+  outline: 1px solid blue;
 }
 
-.feature-list{
+.features p{
+  margin-bottom: 52px;
+  outline: 1px solid blue;
+}
+
+.features-list{
   display:flex;
   margin: 0;
   margin-top: 20px;
@@ -149,11 +161,20 @@ list-style: none;
 .feature-item-grey,
 .recommendations-item {
   width: 400px;
+
+  outline: 1px solid blue;
 }
+
+
 
 .feature-item-blue{
   display: flex;
   flex-wrap: nowrap;
+  color: #ffffff;
+  background-color: #81b3d2;
+  width: 1200px;
+  height: 256px;
+
 }
 
 .feature-item-blue img{
@@ -161,23 +182,82 @@ list-style: none;
   height: 256px;
 }
 
-/* сделал по id чтобы не заморачиваться. Зато быстро :)
-но вот слева у картинки белая полоска, обнуление границ и отступов не помогло */
-#devils-bridge {
+.feature-item-blue h3,
+.feature-item-grey h3 {
+  font-size: 21px;
+  line-height: 21px;
+  margin: 47px 124px 24px 125px;
+  text-align: center;
+}
+
+.feature-item-grey{
+  color: #000000;
+  background-color: #eeeeee;
+  width: 400px;
+  height: 256px;
+}
+
+.feature-item-blue:nth-of-type(2) img{
   margin:0;
   padding: 0;
   order:-1;
 }
 
+/* задаю порядок в features-list */
+.features-list li:nth-child(1) {
+  order:1;
+}
+.features-list li:nth-child(2) {
+  order:3;
+}
+.features-list li:nth-child(3) {
+  order:4;
+}
+.features-list li:nth-child(4) {
+  order:5;
+}
+.features-list li:nth-child(5) {
+  order:6;
+}
+.features-list li:nth-child(6) {
+  order:2;
+}
 
+.recommendations-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  height: 330px;
+}
 
+.hotels-select{
+  width: 1200px;
+  height: 292px;
 
+  outline: 1px solid blue;
+}
+.hotels-select b{
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  padding-top: 53px;
 
+  vertical-align: middle;
 
+  outline: 1px solid blue;
+}
 
+.hotels-select p{
+  padding-top: 28px;
+  margin: 0 370px 50px 370px; 
 
+  outline: 1px solid blue;
+}
 
 .form-open-button{
+  display: inline-block;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
@@ -185,8 +265,11 @@ list-style: none;
   color: #ffffff;
   background-color: #766357;
   border: none;
-  width: 586px;
+  width: 568px;
   height: 86px;
+  padding-bottom: 0px;
+
+  outline: 1px solid blue;
 }
 .form-open-button:hover{
   background-color: #604e43;
@@ -215,6 +298,24 @@ list-style: none;
   background-color: #5496bd; 
 }
 
+.modal-map{
+  width: 1200px;
+  height: 593px;
+  margin-bottom: -130px;
+
+  outline: 1px solid blue;
+}
+
+.main-footer{
+  display: flex;
+  height: 120px;
+  background-color: #ffffff;
+  opacity: 0.9;
+  justify-content: space-around;
+  align-items: center;
+
+  outline: 1px solid blue;
+}
 
 
 .footer-hashtag {
