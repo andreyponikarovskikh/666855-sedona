@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона </title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href='css/style.css' rel='stylesheet'>
   </head>
@@ -29,22 +29,34 @@
       <form class='filters-form' action='https://echo.htmlacademy.ru' method='post'>
         <fieldset class='filters-form-column1'>
           <legend>Инфраструктура:</legend>
-          <input type='checkbox' name='pool' id='checkbox-pool'>
-            <label for='checkbox-pool'>Бассейн</label>
-          <input type='checkbox' name='parking' id='checkbox-parking'>
-            <label for='checkbox-parking'>Парковка</label>
-          <input type='checkbox' name='wifi' id='checkbox-wifi'>
-            <label for='checkbox-wifi'>Wi-Fi</label>
+          <div>
+            <input type='checkbox' name='pool' id='checkbox-pool'>
+              <label for='checkbox-pool'>Бассейн</label>
+          </div>
+          <div>  
+            <input type='checkbox' name='parking' id='checkbox-parking'>
+              <label for='checkbox-parking'>Парковка</label>
+          </div>
+          <div>
+            <input type='checkbox' name='wifi' id='checkbox-wifi'>
+              <label for='checkbox-wifi'>Wi-Fi</label>
+          </div>
         </fieldset>
 
         <fieldset class='filters-form-column2'>
           <legend>Тип жилья:</legend>
-          <input type='checkbox' name='hotel' id='checkbox-hotel'>
-            <label for='checkbox-hotel'>Гостиница</label>
-          <input type='checkbox' name='motel' id='checkbox-motel'>
-            <label for='checkbox-motel'>Мотель</label>
-          <input type='checkbox' name='apartments' id='checkbox-apartments'>
-            <label for='checkbox-apartments'>Апартаменты</label>
+          <div>
+            <input type='checkbox' name='hotel' id='checkbox-hotel'>
+              <label for='checkbox-hotel'>Гостиница</label>
+          </div>
+          <div>
+            <input type='checkbox' name='motel' id='checkbox-motel'>
+              <label for='checkbox-motel'>Мотель</label>
+          </div>
+          <div>
+            <input type='checkbox' name='apartments' id='checkbox-apartments'>
+              <label for='checkbox-apartments'>Апартаменты</label>
+          </div>
         </fieldset>
 
         <fieldset class='filters-form-column3'>
@@ -59,21 +71,23 @@
           <div class='price-scale'>right</div>
           <button type='button' name='min-price-button'></button>
           <button type='button' name='max-price-button'></button>
+
+          <button class='filters-button' type='submit'>Показать</button>
         </fieldset>
-        <button type='submit'>Показать</button>
+        
       </form>
     </section>
 
     <section class='summary'>
        <h2 class='visually-hidden'>Итоги выборки и сортировка</h2>
           <b>Найдено:3 </b>
+          <span>Сортировка:</span>
           <ul class='summary-sorting-list'>
             <li class='summary-sort-item'><a href=#>По цене</a></li>
             <li class='summary-sort-item'><a href=#>По типу</a></li>
             <li class='summary-sort-item'><a href=#>По рейтингу</a></li>
           </ul>
           <ul class='summary-sort-order'>
-          <!-- почему не кнопка?  Правила Вадима Макеева :)                              -->
             <li><a class='summary-sort-ascending' href="#">По возрастанию</a></li>
             <li><a class='summary-sort-descending' href="#">По убыванию</a></li>
           </ul>
@@ -90,7 +104,7 @@
 
           <div class=product-info>
             <h3><a href=#>Amara resort & spa</a></h3>
-            <p class='product-acc type'>Гостиница</p>
+            <p class='product-acc-type'>Гостиница</p>
             <p class='product-price'>от 4000 р.</p>
             <a class='button' href="#">Подробнее</a>
             <a class='button' href="#">Забронировать</a>
@@ -110,7 +124,7 @@
 
           <div class=product-info>
             <h3><a href=#>Desert Quail Inn</a></h3>
-            <p class='product-acc type'>Мотель</p>
+            <p class='product-acc-type'>Мотель</p>
             <p class='product-price'>от 3000 р.</p>
             <a class='button' href="#">Подробнее</a>
             <a class='button' href="#">Забронировать</a>
@@ -130,7 +144,7 @@
 
           <div class=product-info>
             <h3><a href=#>Villas at Poco Diablo</a></h3>
-            <p class='product-acc type'>Апартаменты</p>
+            <p class='product-acc-type'>Апартаменты</p>
             <p class='product-price'>от 2000 р.</p>
             <a class='button' href="#">Подробнее</a>
             <a class='button' href="#">Забронировать</a>
