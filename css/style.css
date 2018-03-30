@@ -293,24 +293,37 @@ list-style: none;
 
 .main-footer{
   display: flex;
+  box-sizing: border-box;
+  width: 1200px;
   height: 120px;
   background-color: #ffffff;
   opacity: 0.9;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 130px;
 }
 
+/*
+.main-footer *{
+  outline: 1px solid blue;
+}
+*/
 
 .footer-hashtag {
-  margin-left:  8px;
-  width: 136px;
+  margin-right:  200px;
+  width: 195px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  text-align: left;
 }
 
 
+.footer-social{
+  width: 150px;
+  margin-right: 225px;
+}
 .footer-social ul{
   display: flex;
   padding: 0;
@@ -330,17 +343,6 @@ list-style: none;
   
 }
 
-/*что-то не срабатывает 
-.social-button:nth-of-type(1){
-  background-image: url("../img/svg/twitter.svg");
-}
-.social-button:nth-of-type(2){
-  background-image: url("../img/svg/fb-icon.svg");
-}  
-.social-button:nth-of-type(3){
-  background-image: url("../img/svg/youtube.svg");
-}
-*/
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
@@ -349,8 +351,7 @@ list-style: none;
 .social-button:active {
   background-color: #5496bd;
 }
-
-.social-button:active path {
+.social-button:active path{
   fill: #88b6d1;
 }
 
@@ -367,12 +368,10 @@ list-style: none;
   width: 115px;
   height: 41px;
 }
-
 .footer-copyright a:hover path,
 .footer-copyright a:focus path {
   fill: #81b3d2;
 }
-
 .footer-copyright a:active path {
   fill: #bdbbbc;
 }
