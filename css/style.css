@@ -233,6 +233,11 @@ list-style: none;
   height: 593px;
   margin-bottom: -120px;
 }
+.modal-map p{
+  margin: 3px 0 0 0;
+  padding: 0;
+}
+
 
 .main-footer{
   display: flex;
@@ -251,6 +256,7 @@ list-style: none;
   outline: 1px solid blue;
 }
 */
+
 
 .footer-hashtag {
   margin-right:  200px;
@@ -303,7 +309,7 @@ list-style: none;
   margin-right: -37px;
 }
 .footer-copyright p{
-  margin: 10px 0 0 0;
+  margin: 10px 10px 0 0;
 }
 .footer-copyright a {
   position: relative;
@@ -328,9 +334,11 @@ list-style: none;
   height: 290px;
 }
 
+/*
 .hotels-select *{
   outline: 1px solid blue;
 }
+*/
 
 .hotels-select b{
   display: block;
@@ -352,7 +360,7 @@ list-style: none;
   line-height: 26px;
   font-weight: 700;
   padding-left: 55px;
-  margin-top: 50px;
+  margin-top: 36px;
 }
 
 
@@ -386,6 +394,9 @@ list-style: none;
   left: 315px;
   background-color: #ffffff;
   text-align: left;
+  margin: 0;
+  border: 0;
+  padding: 0;
   
 }
 
@@ -409,6 +420,107 @@ list-style: none;
 .form-close-button:active{
   color: rgba(0,0,0,0.3); 
   background-color: #5496bd; 
+}
+
+.hotels-arrival-date,
+.hotels-departure-date{
+  width: 313px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight:  700;
+  line-height: 21px;
+  color: #ffffff;
+}
+.hotels-arrival-date {
+  margin-left: 20px;
+}
+.hotels-departure-date {
+  margin-left: 15px;
+}
+
+.hotels-arrival-date:hover,
+.hotels-departure-date:hover {
+  background-color: #eeeeee;
+  border: 0; 
+}
+.hotels-arrival-date:focus,
+.hotels-departure-date:focus {
+  background-color: #ffffff;
+  border: 2 solid grey; 
+}
+
+.calendar-icon{
+  width: 38px;
+  height: 38px;
+  border: 0;
+  padding: 0;
+  margin: 0 0 0 -5px;
+  background-color: #f2f2f2;
+}
+.calendar-icon path{
+  fill: #cacaca;
+}
+.calendar-icon:hover path,
+.calendar-icon:focus path {
+ fill: #000000; 
+}
+.calendar-icon:active path{
+ fill: #81b3d2; 
+}
+
+
+.hotels-guests-qty{
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  border: 0;
+  
+  text-align: center;
+}
+.hotels-guests-qty.label{
+  padding-right:   10px;
+}
+
+.hotels-adults-qty,
+.hotels-children-qty{
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+.button-minus,
+.button-plus {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  width: 38px;
+  height: 38px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+.button-minus {
+  margin-left: 36px;
+}
+.button-minus:hover,
+.button-plus:hover,
+.button-minus:focus,
+.button-plus:focus{
+  color: #000000;
+}
+.button-minus:active,
+.button-plus:active{
+  color: #81b3d2;
 }
 
 
