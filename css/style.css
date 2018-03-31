@@ -58,7 +58,6 @@ list-style: none;
   margin:  0;
   padding: 0; 
   margin-left: -69px;
-  /* а как правильно сцентрировать? */
 
 }
 
@@ -102,12 +101,12 @@ list-style: none;
 
 .intro{
   margin: 0;
-  padding: 75px 0 12px 0;
+  padding: 75px 0 0px 0;
   line-height: 26px;
-  height: 510px;
+  height: 500px;
   background-image: url("../img/background-photo.jpg");
   background-size:  cover;
-  background-position:  0 -40px;
+  background-position:  0 -57px;
   /* в Pixel Perfect по картинке с надписью полное совпадение, а вот по бэкграунду беда :) 
   Пока оставлю так 
   */
@@ -122,15 +121,16 @@ list-style: none;
 .features{
   line-height: 26px;
   color: #000000;
+  background-color: #ffffff; 
 }
 
 .features h1{
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   font-size: 21px;
   font-weight: 700;
   margin: -27px 370px 25px;
-  padding: 0;
+  padding: 21px 0 0 0;
 }
 
 .features h3{
@@ -226,69 +226,12 @@ list-style: none;
   height: 330px;
 }
 
-.hotels-select{
-  width: 1200px;
-  height: 292px;
-}
-.hotels-select b{
-  display: block;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  padding-top: 53px;
 
-  vertical-align: middle;
-}
-
-.hotels-select p{
-  padding-top: 28px;
-  margin: 0 370px 50px 370px; 
-}
-
-.form-open-button{
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700; 
-  color: #ffffff;
-  background-color: #766357;
-  border: none;
-  width: 568px;
-  height: 86px;
-  padding-bottom: 0px;
-}
-.form-open-button:hover{
-  background-color: #604e43;
-}
-.form-open-button:active{
-  color: rgba(0,0,0,0.3);
-  background-color: #503e33;
-}
-
-.form-close-button{
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700; 
-  color: #ffffff;
-  background-color: #81b3d2;
-  border: none;
-  width: 458px;
-  height: 58px;
-}
-.form-close-button:hover{
-  background-color: #669ec0; 
-}
-.form-close-button:active{
-  color: rgba(0,0,0,0.3); 
-  background-color: #5496bd; 
-}
 
 .modal-map{
   width: 1200px;
   height: 593px;
-  margin-bottom: -130px;
+  margin-bottom: -120px;
 }
 
 .main-footer{
@@ -375,6 +318,101 @@ list-style: none;
 .footer-copyright a:active path {
   fill: #bdbbbc;
 }
+
+
+/*---------------------форма поиска---------------------*/
+/*--------------------с её родителем---------------------*/
+.hotels-select{
+  position: relative;
+  width: 1200px;
+  height: 290px;
+}
+
+.hotels-select *{
+  outline: 1px solid blue;
+}
+
+.hotels-select b{
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  padding-top: 53px;
+
+  vertical-align: middle;
+}
+
+.hotels-select p{
+  padding-top: 28px;
+  margin: 0 370px 50px 370px;
+}
+
+.hotels-select div{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-left: 55px;
+  margin-top: 50px;
+}
+
+
+.form-open-button{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700; 
+  color: #ffffff;
+  background-color: #766357;
+  border: none;
+  width: 568px;
+  height: 86px;
+  padding-bottom: 0px;
+}
+.form-open-button:hover{
+  background-color: #604e43;
+}
+.form-open-button:active{
+  color: rgba(0,0,0,0.3);
+  background-color: #503e33;
+}
+
+
+.hotels-select-form{
+  position: absolute;
+  width: 570px;
+  height: 395px;
+  top: 295px;
+  left: 315px;
+  background-color: #ffffff;
+  text-align: left;
+  
+}
+
+.form-close-button{
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 0 0 0 0;
+  margin: 53px 0 0 53px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  width: 458px;
+  height: 58px;
+
+}
+.form-close-button:hover{
+  background-color: #669ec0; 
+}
+.form-close-button:active{
+  color: rgba(0,0,0,0.3); 
+  background-color: #5496bd; 
+}
+
+
+
 
 /*------------------------------ -----------------------*/
 /*------------------ вторая страница--------------------*/
