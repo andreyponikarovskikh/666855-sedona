@@ -52,6 +52,7 @@ list-style: none;
 
 .main-header-logo{
   position: absolute;
+  left: 50%;
   z-index: 10; /* на всякий случай :) */
   width: 138px;
   height: 70px;
@@ -552,7 +553,7 @@ list-style: none;
   margin: 0;
   padding: 0;
   width: 1200px;
-  height: 217px;
+  height: 219px;
   color: #ffffff;
 }
 
@@ -562,6 +563,7 @@ list-style: none;
   padding: 27px 70px 0px 70px;
   justify-content: flex-start;
   background-image: url("../img/filters-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
 }
@@ -620,6 +622,11 @@ list-style: none;
   width: 133px;
   height: 32px;
   cursor: pointer;
+}
+.filters-button:hover,
+.filters-button:active{
+  color: #000000;
+  background: #ffffff;
 }
 
 .filter-option{
@@ -724,7 +731,6 @@ list-style: none;
   height: 2px;
 }
 
-
 .toggle-button{
   position: absolute;
   top: 76px;
@@ -762,6 +768,12 @@ list-style: none;
   cursor: pointer;
   transform: scale(0.7);
 }
+.toggle-button-min:hover,
+.toggle-button-max:hover{
+  background: #1c4f80;
+}
+
+
 
 /*---------------------------------------------------------*/
 .summary{
@@ -796,18 +808,46 @@ list-style: none;
   padding: 0;
   margin: 0;
   text-align: left;
-  margin-right: 250px;
+  margin-right: 455px;
 }
 .summary-sort-item{
   margin: 0;
   padding: 0;
   min-width: 81px;
 }
+.summary-sort-item a{
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+.summary-sort-item a:hover{
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+.summary-sort-item a:active{
+  color: #000000;
+  border: none;
+}
 
 .summary-sort-order{
   display: flex;
   list-style: none; 
+  width: 34px;
+  justify-content: space-between;
 }
+
+.summary-sort-ascending path,
+.summary-sort-descending path{
+  fill:  #cacaca;
+}
+.summary-sort-ascending:hover path,
+.summary-sort-descending:hover path{
+  fill: #231f20;
+}
+.summary-sort-ascending:active path,
+.summary-sort-descending:active path{
+  fill: #81b3d2;
+}
+
 
 /*---------------------------------------------------------*/
 
@@ -823,8 +863,8 @@ list-style: none;
   width: 1200px;
   box-sizing: border-box;
   border: 1px solid #f2f2f2;
-  height: 152px;
-  padding: 0 0 0 74px;
+  min-height: 152px;
+  padding: 0 0 0 70px;
   margin: 0;
   align-items: center;
   text-align: left;
@@ -833,7 +873,7 @@ list-style: none;
 .product-image{
   width: 136px;
   margin-right: 30px;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 .product-info{
   /* position: relative;*/
@@ -843,7 +883,7 @@ list-style: none;
 .product-info h3{
   position: absolute;
   top: 5px;
-  left: 240px;
+  left: 236px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -852,17 +892,17 @@ list-style: none;
 .product-acc-type {
   position: absolute;
   top: 45px;
-  left: 240px;
+  left: 236px;
 }
 .product-price {
   position: absolute;
   top: 45px;
-  left: 355px;
+  left: 351px;
 }
 .elaborate-button {
   position: absolute;
   top:94px;
-  left: 240px;
+  left: 236px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -887,7 +927,7 @@ list-style: none;
 .booking-button{
   position: absolute;
   top:94px;
-  left: 355px;
+  left: 351px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -928,8 +968,8 @@ list-style: none;
 
 .product-stars{
   position: absolute;
-  top:16px;
-  left: 1017px;
+  top:14px;
+  left: 1014px;
   width: 110px;
   text-align: right;
 }
