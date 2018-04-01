@@ -614,6 +614,48 @@ list-style: none;
   cursor: pointer;
 }
 
+
+.filter-option{
+   /* outline: 1px solid blue; */
+   padding-left: 40px;
+}
+
+
+.filter-option label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-option-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: -40px;
+  top: 0;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-option-checkbox:checked + label::before {
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/svg/checkbox-on.svg");
+}
+.filter-option-checkbox:disabled + label::before {
+  fill: #6a6a6a;
+  opacity: 0.3;
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------*/
 .summary{
   display: flex;
   width: 1200px;
@@ -658,6 +700,9 @@ list-style: none;
   display: flex;
   list-style: none; 
 }
+
+/*---------------------------------------------------------*/
+
 
 .product-list{
   padding: 0;
