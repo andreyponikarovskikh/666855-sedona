@@ -550,7 +550,7 @@ list-style: none;
   margin: 0;
   padding: 0;
   width: 1200px;
-  height: 215px;
+  height: 217px;
   color: #ffffff;
 }
 
@@ -558,7 +558,7 @@ list-style: none;
   display: flex;
   margin: 0;
   padding: 27px 70px 0px 70px;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-image: url("../img/filters-background.jpg");
   background-repeat: no-repeat;
   background-color: #f2f2f2;
@@ -576,12 +576,12 @@ list-style: none;
   flex-direction: column;
   margin:0;
   padding: 0;
-  width: 275px;
+  width: 257px;
   text-align: left;
   border: 0;
 }
 .filters-form-column2{
-  margin-right: 227px
+  margin-right: 220px
 }
 
 .filters-form-column1 div,
@@ -590,6 +590,9 @@ list-style: none;
 }
 
 .filters-form-column3 {
+  position: relative;
+  top: 0px;
+  left: 0px;
   margin:0;
   padding: 0;
   border: 0;
@@ -601,7 +604,9 @@ list-style: none;
 }
 
 .filters-button{
-  display: inline-block;
+  position: absolute;
+  top:124px;
+  left: 92px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
@@ -609,17 +614,16 @@ list-style: none;
   color: #ffffff;
   background-color: transparent;
   border: 2px solid #ffffff;
+  border-radius: 2px;
   width: 133px;
   height: 32px;
   cursor: pointer;
 }
 
-
 .filter-option{
    /* outline: 1px solid blue; */
    padding-left: 40px;
 }
-
 
 .filter-option label {
   display: block;
@@ -649,11 +653,113 @@ list-style: none;
   opacity: 0.3;
 }
 
+.price-range *{
+  cursor: pointer;
+}
+.price-range {
+  position: absolute;
+  height: 32px;
+  top: 32px;
+  left: 4px;
+  width: 315px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.min-price{
+  position: absolute;
+  top: 6px;
+  left: 66px;
+  width: 90px;
+  color: #ffffff;
+}
+.max-price{
+  position: absolute;
+  top: 5px;
+  left: 213px;
+  width: 90px;
+  color: #ffffff;
+}
+
+.min-price input,
+.max-price input{
+  width: 50px;
+  margin-left: 5px;
+  border: 0;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/*----------  рисую  линии и кружочки------------ */
+.price-range::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+
+.price-scale{
+  height: 2px;
+  width: 306px;
+}
+.price-scale-min{
+  position: absolute;
+  top: 88px;
+  left: 15px;
+  background: #ffffff;
+  width:80%;
+  height: 2px;
+}
+.price-scale-max{
+  position: absolute;
+  top: 88px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  width:100%;
+  height: 2px;
+}
 
 
+.toggle-button{
+  position: absolute;
+  top: 76px;
+  left: 7px;
+  width: 306px;
+  height: 30px;
+}
+.toggle-button-min{
+  position: absolute;
+  top: 0px;
 
+  left: 0%;
 
+  width: 28px;
+  height: 28px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  transform: scale(0.7);
+}
+.toggle-button-max{
+  position: absolute;
+  top: 0px;
 
+  left: 80%;
+
+  width: 28px;
+  height: 28px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  transform: scale(0.7);
+}
 
 /*---------------------------------------------------------*/
 .summary{
