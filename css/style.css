@@ -18,7 +18,7 @@ body{
 
 /*
 * {
-   outline: 1px solid blue;
+//   outline: 1px solid blue;
 }
 */
 
@@ -270,6 +270,8 @@ list-style: none;
 }
 
 
+
+
 .main-footer{
   display: flex;
   box-sizing: border-box;
@@ -277,24 +279,23 @@ list-style: none;
   height: 120px;
   background-color: #ffffff;
   opacity: 0.9;
-  justify-content: flex-start;
   align-items: center;
-  padding-left: 130px;
+  text-align: center;
+  padding-left: 103px;
 }
 
 .footer-hashtag {
-  margin-right:  200px;
+  margin:  10px 225px 0 2px;
   width: 195px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  text-align: left;
 }
 
 .footer-social{
   width: 150px;
-  margin-right: 225px;
+  margin: 10px 229px 0 0;
 }
 .footer-social ul{
   display: flex;
@@ -328,7 +329,7 @@ list-style: none;
 
 .footer-copyright {
   display: flex;
-  margin-right: -37px;
+  margin: 10px 0 0 0;
 }
 .footer-copyright p{
   margin: 10px 10px 0 0;
@@ -558,8 +559,14 @@ list-style: none;
   color: #ffffff;
 }
 
+.filters-form *{
+  outline: 1px solid blue;
+}
+  
+  
 .filters-form{
   display: flex;
+  height: auto;
   margin: 0;
   padding: 27px 70px 0px 70px;
   justify-content: flex-start;
@@ -607,6 +614,7 @@ list-style: none;
 .filters-form-column3 legend{
   margin-left: 7px;
 }
+
 
 .filters-button{
   position: absolute;
@@ -662,6 +670,7 @@ list-style: none;
   fill: #6a6a6a;
   opacity: 0.3;
 }
+
 
 .price-range *{
   cursor: pointer;
@@ -777,6 +786,8 @@ list-style: none;
 
 
 /*---------------------------------------------------------*/
+
+
 .summary{
   display: flex;
   width: 1200px;
@@ -868,7 +879,6 @@ list-style: none;
 
 /*---------------------------------------------------------*/
 
-
 .product-list{
   padding: 0;
   margin:0;
@@ -880,7 +890,7 @@ list-style: none;
   width: 1200px;
   box-sizing: border-box;
   border: 1px solid #f2f2f2;
-  min-height: 152px;
+  min-height: 149px;
   padding: 0 0 0 70px;
   margin: 0;
   align-items: center;
@@ -888,38 +898,58 @@ list-style: none;
 }
 
 .product-image{
-  width: 136px;
-  margin-right: 30px;
-  margin-top: 1px;
+  width: 135px;
+  margin-right: 31px;
+  margin-top: 8px;
 }
 .product-info{
-  /* position: relative;*/
-  min-width: 260px; 
+  display: flex;
+  flex-direction: column;
+  width: 260px; 
   margin-right: 520px;
+  margin-bottom: 0px;
 }
 .product-info h3{
-  position: absolute;
-  top: 5px;
-  left: 236px;
+  margin: 0px 0 8px 0;
+  /* margin-top 8 px */
+  padding: 0;
+  max-width: 400px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
+
+.product-info h3:hover,
+.product-info h3:focus {
+  color: #81b3d2;
+}
+
+.product-info h3:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.product-info-raw2{
+  display: flex;
+  margin:0 0 15px 0;
+}
+
 .product-acc-type {
-  position: absolute;
-  top: 45px;
-  left: 236px;
+  width: 110px;
+  margin: 0 6px 0 0;
 }
+
 .product-price {
-  position: absolute;
-  top: 45px;
-  left: 351px;
+  margin: 0;
 }
+
+.product-info-raw3{
+  display: flex;
+  margin:0 ;
+}
+
 .elaborate-button {
-  position: absolute;
-  top:94px;
-  left: 236px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -932,6 +962,7 @@ list-style: none;
   color: #ffffff;
   background-color: #82b3d2;
 }
+
 .elaborate-button:hover,
 .elaborate-button:focus {
   background-color: #659dc0;
@@ -942,17 +973,14 @@ list-style: none;
 }
 
 .booking-button{
-  position: absolute;
-  top:94px;
-  left: 351px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 8px;
   border: 0;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  width: 142px;
+  width: 140px;
   height: 27px;
   color: #ffffff;
   background-color: #766257; 
@@ -966,10 +994,16 @@ list-style: none;
   color: #847870;
 }
 
+
+
+.product-rating{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+
 .product-hotel-rating{
-  position: absolute;
-  top:94px;
-  left: 1020px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -984,11 +1018,9 @@ list-style: none;
 }
 
 .product-stars{
-  position: absolute;
-  top:14px;
-  left: 1014px;
   width: 110px;
   text-align: right;
+  padding-bottom: 25px;
 }
 
 
