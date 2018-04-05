@@ -436,7 +436,8 @@ list-style: none;
 
 .hotels-arrival-date,
 .hotels-departure-date{
-  width: 313px;
+  width: 290px;
+  padding-left: 15px;
   height: 38px;
   background-color: #f2f2f2;
   border: 0;
@@ -458,16 +459,20 @@ list-style: none;
 .hotels-departure-date input::placeholder,
 .hotels-arrival-date input::placeholder{
   color: #000000;
+  border: 2 solid grey; 
 }
 
 .hotels-departure-date input::-moz-placeholder,
 .hotels-arrival-date input::-moz-placeholder{
   color: #000000;
+  border: 2 solid grey; 
 }
+
 .hotels-arrival-date:hover,
 .hotels-departure-date:hover{
   background-color: #eeeeee;
   border: 0; 
+  border: 2 solid grey; 
 }
 
 .hotels-arrival-date:focus,
