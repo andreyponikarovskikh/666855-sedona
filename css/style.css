@@ -399,14 +399,13 @@ list-style: none;
 }
 
 .hotels-select-form{
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 570px;
   height: 395px;
-  top: 295px;
-  left: 315px;
+  margin-left: 315px;
   background-color: #ffffff;
   text-align: left;
-  margin: 0;
   border: 0;
   padding: 0;
 }
