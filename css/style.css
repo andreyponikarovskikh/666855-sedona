@@ -270,12 +270,11 @@ list-style: none;
   opacity: 0.9;
   align-items: center;
   text-align: center;
-  padding-left: 103px;
 }
 
 .footer-hashtag{
-  margin:  10px 225px 0 2px;
-  width: 195px;
+  margin:  0 auto;
+  width: 400px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -283,14 +282,14 @@ list-style: none;
 }
 
 .footer-social{
-  width: 150px;
-  margin: 10px 229px 0 0;
+  margin:  0 auto;
+  width: 400px;
 }
 
 .footer-social ul{
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   width: 150px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -321,10 +320,12 @@ list-style: none;
 
 .footer-copyright{
   display: flex;
-  margin: 10px 0 0 0;
+  margin:  0 auto;
+  width: 400px;
 }
 
 .footer-copyright p{
+  padding-left: 100px;
   margin: 10px 10px 0 0;
 }
 
@@ -372,7 +373,7 @@ list-style: none;
   line-height: 26px;
   font-weight: 700;
   padding-left: 55px;
-  margin-top: 36px;
+  margin-bottom:  30px;
 }
 
 .form-open-button{
@@ -408,6 +409,8 @@ list-style: none;
   text-align: left;
   border: 0;
   padding: 0;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 
 .form-close-button{
@@ -416,7 +419,7 @@ list-style: none;
   line-height: 26px;
   font-weight: 700;
   padding: 0 0 0 0;
-  margin: 53px 0 0 53px;
+  margin: 20px 0 0 53px;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
@@ -439,7 +442,7 @@ list-style: none;
   padding-left: 15px;
   height: 38px;
   background-color: #f2f2f2;
-  border: 0;
+  border: 2px solid #f2f2f2;
   text-transform: uppercase;
   font-size: 14px;
   font-weight:  700;
@@ -458,26 +461,23 @@ list-style: none;
 .hotels-departure-date input::placeholder,
 .hotels-arrival-date input::placeholder{
   color: #000000;
-  border: 2 solid grey; 
 }
 
 .hotels-departure-date input::-moz-placeholder,
 .hotels-arrival-date input::-moz-placeholder{
   color: #000000;
-  border: 2 solid grey; 
 }
 
 .hotels-arrival-date:hover,
 .hotels-departure-date:hover{
   background-color: #eeeeee;
-  border: 0; 
-  border: 2 solid grey; 
+  border: 2px solid #f2f2f2;
 }
 
 .hotels-arrival-date:focus,
 .hotels-departure-date:focus{
   background-color: #ffffff;
-  border: 2 solid grey; 
+  border: 2px solid #f2f2f2;
 }
 
 .calendar-icon{
